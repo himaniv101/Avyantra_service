@@ -18,13 +18,19 @@ cache:
 
 env:
   global:
-    - CC_TEST_REPORTER_ID=0a4da081e3fad94ed05f9d6cb75ec4e5bad81340097e0bc6a6f159b0a64f68bc
+    - CC_TEST_REPORTER_ID=faefa8d9c31551e59a3adbd19521631c87fa025076ec4c2bb6fa9bc56a46c647
+
+install:
+  - npm install  
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   ##- go get github.com/jpmonette/apexcov
   - ./cc-test-reporter before-build
+
+script:
+  - npm run coverage                         
 
 after_script:
  ## - ./cc-test-reporter after-build -t lcov --debug --exit-code $TRAVIS_TEST_RESULT
