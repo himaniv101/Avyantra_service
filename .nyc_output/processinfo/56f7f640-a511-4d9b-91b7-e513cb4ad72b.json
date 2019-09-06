@@ -1,0 +1,1 @@
+{"uuid":"56f7f640-a511-4d9b-91b7-e513cb4ad72b","parent":null,"pid":12436,"argv":["/usr/bin/node","/usr/bin/npm","test"],"execArgv":[],"cwd":"/home/aspl/test coverage/backend","time":1567754513406,"ppid":12429,"root":"daec1b59-1bff-4d13-a510-76832cc53c9d","coverageFilename":"/home/aspl/test coverage/backend/.nyc_output/56f7f640-a511-4d9b-91b7-e513cb4ad72b.json","files":[]}
