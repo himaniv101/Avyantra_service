@@ -22,19 +22,18 @@ env:
 
 install:
   - npm install  
+  - sudo npm i -g mocha istanbul nyc --save-dev
+  - npm i mocha express body-parser --save-dev
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
-  ##- go get github.com/jpmonette/apexcov
   - ./cc-test-reporter before-build
 
 script:
   - npm run coverage                         
 
 after_script:
- ## - ./cc-test-reporter after-build -t lcov --debug --exit-code $TRAVIS_TEST_RESULT
-  ##- apexcov
   - ./cc-test-reporter format-coverage -t lcov ./coverage/lcov.info
   - ./cc-test-reporter upload-coverage
 
