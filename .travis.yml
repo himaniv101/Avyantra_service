@@ -22,7 +22,7 @@ env:
 
 install:
   - npm install  
-  - sudo npm i -g mocha istanbul nyc --save-dev
+  - npm i -g mocha istanbul nyc --save-dev
   - npm i mocha express body-parser --save-dev
 
 before_script:
