@@ -18,7 +18,7 @@ cache:
 
 env:
   global:
-    - CC_TEST_REPORTER_ID=faefa8d9c31551e59a3adbd19521631c87fa025076ec4c2bb6fa9bc56a46c647
+    - CC_TEST_REPORTER_ID=0a4da081e3fad94ed05f9d6cb75ec4e5bad81340097e0bc6a6f159b0a64f68bc
 
 install:
   - npm install  
