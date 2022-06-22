@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/paigen11/mysqlRegistration#readme",
   "dependencies": {
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "await": "^0.2.6",
     "babel-cli": "^6.26.0",
     "babel-plugin-istanbul": "^5.2.0",
